@@ -1,0 +1,22 @@
+---
+layout: page
+title: News
+---
+<div id="news-wrapper">
+  <div id="content-wrapper">
+    {{ content }}
+  </div>
+
+  <div id="category-wrapper">
+    <hr>
+    <div class="categories">
+      <a href="/news" class="{% if page.category == null %}active{% endif %}">Alle</a>
+      <a href="/news/einsätze" class="{% if page.category == 'einsätze' %}active{% endif %}">Einsätze</a>
+      <a href="/news/events" class="{% if page.category == 'events' %}active{% endif %}">Events</a>
+      <a href="/news/übungen" class="{% if page.category == 'übungen' %}active{% endif %}">Übungen</a>
+      <a href="/news/schulungen" class="{% if page.category == 'schulungen' %}active{% endif %}">Schulungen</a>
+      <a href="/news/jugend" class="{% if page.category == 'jugend' %}active{% endif %}">Jugend</a>
+      <a href="/news/news" class="{% if page.category == 'news' %}active{% endif %}">News</a>
+    </div>
+  </div>
+</div>

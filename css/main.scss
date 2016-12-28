@@ -15,6 +15,7 @@ $spacing-unit:     30px;
 $text-color:       #111;
 $background-color: #ffffff; //#fdfdfd;
 $brand-color:      #E05036;
+$secondary-color:  #062053;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -47,3 +48,4 @@ $on-laptop:        800px;
 @import "app";
 @import "modal";
 @import "footer";
+@import "news";
