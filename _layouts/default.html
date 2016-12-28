@@ -10,25 +10,25 @@
 	<div id="preview">
 		<div id="preview-wrapper">
 			<div id="news-preview-wrapper">
-				<div id="article-wrapper" class="wrapper">
+				<div id="article-wrapper">
 					{% for post in site.posts limit:2 %}
-					<a href="{{ post.url | prepend: site.baseurl }}">
-					<article>
-						<h2>{{ post.title | escape }}</h2>
-						<span class="date">{{ post.date | date: "%d.%m.%Y" }}</span>
-						<div class="content">
-							<!--<image-loader :src="article.previewImageSource"></image-loader>-->
-							<p>{{ post.content | strip_html | truncatewords:60 }}</p>
-						</div>
-					</article>
+					<a href="{{ post.url | prepend: site.baseurl }}" class="clickable-article">
+						<article>
+							<h2>{{ post.title | escape }}</h2>
+							<span class="date">{{ post.date | date: "%d.%m.%Y" }}</span>
+							<div class="content">
+								<!--<image-loader :src="article.previewImageSource"></image-loader>-->
+								<p>{{ post.content | strip_html | truncatewords:60 }}</p>
+							</div>
+						</article>
 					</a>
 					{% endfor %}
 					<a id="more-news" href="/news">mehr</a>
 				</div>
 			</div>
-			<div id="event-preview-wrapper">
+			<!--<div id="event-preview-wrapper">
 				<h2>EventPreview</h2>
-			</div>
+			</div>-->
 		</div>
 	</div>
 

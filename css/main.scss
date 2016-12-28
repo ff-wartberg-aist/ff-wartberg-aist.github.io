@@ -12,10 +12,12 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
+$text-color:       #323232;
 $background-color: #ffffff; //#fdfdfd;
 $brand-color:      #E05036;
 $secondary-color:  #062053;
+$tertiary-color:   #20346B;
+
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -37,7 +39,7 @@ $on-laptop:        800px;
 // }
 
 // Import partials from the `minima` theme.
-@import "minima";
+//@import "minima";
 
 // Import Shared-CSS
 @import "_clearfixes";

@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Freiwillige Feuerwehr - Warberg ob der Aist
+title: Freiwillige Feuerwehr - Wartberg ob der Aist
 email: postmaster@ff-wartberg-aist.at
 description: > # this means to ignore newlines until "baseurl:"
   Write an awesome description for your new site here. You can edit this
@@ -25,4 +25,4 @@ permalink: /news/:categories/:year/:month/:day/:title/
 
 # Build settings
 markdown: kramdown
-theme: minima
+# theme: minima
