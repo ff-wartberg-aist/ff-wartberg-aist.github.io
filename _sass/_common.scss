@@ -1,9 +1,18 @@
 // http://stackoverflow.com/a/16575811
-.notransition {
-  -webkit-transition: none !important;
-  -moz-transition: none !important;
-  -o-transition: none !important;
-  transition: none !important;
+.noanimation {
+  -webkit-animation: none !important;
+  -moz-animation: none !important;
+  -o-animation: none !important;
+  -ms-animation: none !important;
+  animation: none !important;
+}
+
+.header-item-visible {
+  opacity: 1 !important;
+}
+
+.header-fixed-height {
+  height: 67vh !important;
 }
 
 body {
