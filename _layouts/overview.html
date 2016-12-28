@@ -6,18 +6,16 @@ title: News
 {% if page.category %}
 <div id="archives">
     {% for post in site.categories[page.category] %}
-    <article class="archive-item">
-      <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
-    </article>
+      {% include post-preview.html %}
     {% endfor %}
+    {% if site.categories[page.category] == null %}<div class="no-content">In dieser Kategorie gibt es noch keine Beiträge...</div>{% endif %}
 </div>
 
 {% else %}
 <div id="archives">
     {% for post in site.posts %}
-    <article class="archive-item">
-      <h4><a href="{{ site.baseurl }}{{ post.url }}">{{post.title}}</a></h4>
-    </article>
+      {% include post-preview.html %}
     {% endfor %}
+    {% if site.posts == null %}<div class="no-content">In dieser Kategorie gibt es noch keine Beiträge...</div>{% endif %}
 </div>
 {% endif %}
