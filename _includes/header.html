@@ -215,13 +215,11 @@
 </header>
 <script type="text/javascript">
 	(function () {
-		// Basic usage
-		if (firstImpression()) {
-			console.log('New user');
+		// also catch if somebody navigated through a link: http://stackoverflow.com/a/14645182
+        if (!firstImpression() && !!window.location.href.match(new RegExp(/^([a-z]+\:\/{2})?([\w-]+\.[\w-]+\.\w+)\/?$/))) {
 			$(".header-wrapper").css("height", "100vh");
 		}
 		else {
-			console.log("Known User");
 			$(".animated-onload").addClass("noanimation");
 			$(".animated-onload").css("opacity", "1");
 		}
