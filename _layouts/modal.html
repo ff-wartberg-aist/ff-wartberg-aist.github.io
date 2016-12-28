@@ -1,0 +1,13 @@
+---
+layout: default
+---
+
+<div id="content">
+	<div id="content-wrapper" v-on-clickaway="closeContentPanel">
+		<div id="title-panel">
+			<h1>{{ page.title | upcase }}</h1>
+			<a class="close-icon" href="/">&#10006;</a>
+		</div>
+		{{ content }}
+	</div>
+</div>

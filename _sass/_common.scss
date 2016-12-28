@@ -1,0 +1,7 @@
+// http://stackoverflow.com/a/16575811
+.notransition {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}

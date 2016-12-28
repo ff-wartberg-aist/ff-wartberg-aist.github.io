@@ -1,0 +1,33 @@
+#content-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: $background-color;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22); //http:// codepen.io/sdthornton/pen/wBZdXq
+    #title-panel {
+        background: $brand-color;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        box-shadow: 2px 0 17px rgba(0, 0, 0, 0.22);
+        h1 {
+            color: $background-color;
+            font-weight: lighter;
+            margin: 1.6em;
+        }
+    }
+    #content {
+        margin: 1em 1.5em;
+    }
+    .close-icon {
+        float: right;
+        text-decoration: none;
+		position: absolute;
+		top: 0;
+		left: 0;
+        margin-left: 1rem;
+        margin-top: .7rem;
+        color: rgba(255, 255, 255, .9);
+        font-weight: 100;
+    }
+}

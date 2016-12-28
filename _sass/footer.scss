@@ -1,0 +1,26 @@
+footer#site-footer {
+    /* --- Keyframes --- */
+    @keyframes darken {
+        to {
+            color: textColor;
+        }
+    }
+    .footer-wrapper {
+        /* --- Styles --- */
+        font-size: .8em;
+        color: primaryColor;
+        animation: .4s linear 1s forwards darken;
+        a,
+        .seperator {
+            color: inherit;
+        }
+        a {
+            text-transform: uppercase;
+            text-decoration: none;
+        }
+        .seperator::before {
+            content: "|";
+            margin: 0 .6em;
+        }
+    }
+}
