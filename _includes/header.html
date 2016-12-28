@@ -216,7 +216,7 @@
 <script type="text/javascript">
 	(function () {
 		// also catch if somebody navigated through a link: http://stackoverflow.com/a/14645182
-        if (!firstImpression() && !!window.location.href.match(new RegExp(/^([a-z]+\:\/{2})?([\w-]+\.[\w-]+\.\w+)\/?$/))) {
+        if (firstImpression() && !!window.location.href.match(new RegExp(/^([a-z]+\:\/{2})?([\w-]+\.[\w-]+\.\w+)\/?$/))) {
 			$(".header-wrapper").css("height", "100vh");
 		}
 		else {
