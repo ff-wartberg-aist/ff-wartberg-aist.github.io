@@ -12,6 +12,12 @@
 	<link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ " /feed.xml
 		" | prepend: site.baseurl | prepend: site.url }}">
 
+	<script type="text/javascript">
+	// redirect if on desktop
+	if(window.innerWidth > 800)
+		window.location.href = window.location.protocol + "//" + window.location.host + (window.location.pathname.substr(2));
+	</script>
+
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 </head>
