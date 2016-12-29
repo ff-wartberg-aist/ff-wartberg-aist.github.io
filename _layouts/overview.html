@@ -6,7 +6,9 @@ title: News
 {% if page.category %}
 <div id="archives">
     {% for post in site.categories[page.category] %}
-      {% include post-preview.html %}
+      {% unless post.categories contains 'm' %}
+        {% include post-preview.html %}
+      {% endunless %}
     {% endfor %}
     {% if site.categories[page.category] == null %}<div class="no-content">In dieser Kategorie gibt es noch keine Beiträge...</div>{% endif %}
 </div>
@@ -14,7 +16,9 @@ title: News
 {% else %}
 <div id="archives">
     {% for post in site.posts %}
-      {% include post-preview.html %}
+      {% unless post.categories contains 'm' %}
+        {% include post-preview.html %}
+      {% endunless %}
     {% endfor %}
     {% if site.posts == null %}<div class="no-content">In dieser Kategorie gibt es noch keine Beiträge...</div>{% endif %}
 </div>

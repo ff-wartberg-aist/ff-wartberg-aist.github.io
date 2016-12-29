@@ -15,6 +15,12 @@
 	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 
+	<script type="text/javascript">
+	// redirect if on mobile
+	if(window.innerWidth <= 800)
+		window.location.href = window.location.protocol + "//" + window.location.host + "/m" + (window.location.pathname === "/" ? "" : window.location.pathname);
+	</script>
+
 	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
 	<script type="text/javascript">
 		/*
