@@ -1,5 +1,5 @@
 ---
-layout: post-mobile
+layout: mobile-post
 title: "Friedenslicht 2016"
 date: 2016-12-17 00:00:00 +0000
 categories: m events

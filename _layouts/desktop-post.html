@@ -1,0 +1,37 @@
+---
+layout: desktop-default
+---
+<div id="modal">
+	<div id="modal-wrapper">
+		<div id="title-panel">
+            <h1 style="text-transform: uppercase;">{% if page.category == null %}News{%else%}{{page.category}}{% endif %}</h1>
+			<a class="close-icon" href="/">&#10006;</a>
+		</div>
+		<div id="content-panel">
+            <div id="news-wrapper">
+                <div id="content-wrapper">
+                    <article>
+                    <header class="post-header">
+                        <h2 class=post-title>{{ page.title | escape }}</h2>
+                        <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%d.%m.%Y" }}</time>{% if page.author %} • <span>{{ page.author }}</span>{% endif %}</p>
+                    </header>
+                    {{ content }}
+                </article>
+                </div>
+
+                <div id="category-wrapper">
+                    <hr>
+                    <div class="categories">
+                        <a href="/news" class="{% if page.category == null %}active{% endif %}">Alle</a>
+                        <a href="/news/einsätze" class="{% if page.category == 'einsätze' %}active{% endif %}">Einsätze</a>
+                        <a href="/news/events" class="{% if page.category == 'events' %}active{% endif %}">Events</a>
+                        <a href="/news/übungen" class="{% if page.category == 'übungen' %}active{% endif %}">Übungen</a>
+                        <a href="/news/schulungen" class="{% if page.category == 'schulungen' %}active{% endif %}">Schulungen</a>
+                        <a href="/news/jugend" class="{% if page.category == 'jugend' %}active{% endif %}">Jugend</a>
+                        <a href="/news/news" class="{% if page.category == 'news' %}active{% endif %}">News</a>
+                    </div>
+                </div>
+            </div>
+		</div>
+	</div>
+</div>

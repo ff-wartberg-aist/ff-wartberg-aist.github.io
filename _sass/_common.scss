@@ -1,13 +1,12 @@
-// http://stackoverflow.com/a/16575811
-.noanimation {
-  -webkit-animation: none !important;
-  -moz-animation: none !important;
-  -o-animation: none !important;
-  -ms-animation: none !important;
-  animation: none !important;
-}
+/* --- import Shared-CSS --- */
+@import "_clearfixes";
+@import "_theme";
 
-body {
-    font-family: 'Lato', sans-serif;
-    //font-weight: 200;
+/* --- common css classes --- */
+.noanimation { // http://stackoverflow.com/a/16575811
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
 }

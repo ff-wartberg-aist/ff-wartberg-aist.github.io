@@ -1,0 +1,22 @@
+---
+layout: desktop-page
+title: News
+---
+<div id="posts-wrapper">
+  <div id="content-wrapper">
+    {{ content }}
+  </div>
+
+  <div id="category-wrapper">
+    <hr>
+    <div class="categories">
+      <a href="/posts" class="{% if page.category == null %}active{% endif %}">Alle</a>
+      <a href="/posts/einsaetze" class="{% if page.category == 'einsaetze' %}active{% endif %}">Einsätze</a>
+      <a href="/posts/events" class="{% if page.category == 'events' %}active{% endif %}">Events</a>
+      <a href="/posts/uebungen" class="{% if page.category == 'uebungen' %}active{% endif %}">Übungen</a>
+      <a href="/posts/schulungen" class="{% if page.category == 'schulungen' %}active{% endif %}">Schulungen</a>
+      <a href="/posts/jugend" class="{% if page.category == 'jugend' %}active{% endif %}">Jugend</a>
+      <a href="/posts/news" class="{% if page.category == 'news' %}active{% endif %}">News</a>
+    </div>
+  </div>
+</div>

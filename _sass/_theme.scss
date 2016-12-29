@@ -1,0 +1,33 @@
+/* --- colors --- */
+$text-color:       #323232;
+$background-color: #ffffff; //#fdfdfd;
+$brand-color:      #E05036;
+$secondary-color:  #062053;
+$tertiary-color:   #20346B;
+
+body {
+    font-family: 'Lato', sans-serif;
+    // font-weight: 200;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+a.button {
+    font-size: .8em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 3px;
+    padding-left: 1em;
+    padding-right: 1em;
+    -webkit-user-select: none;
+    border-color: $brand-color;
+    color: $brand-color;
+    border-width: 1px;
+    border-style: solid;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    &:focus {
+        outline: 0;
+    }
+}

@@ -1,5 +1,5 @@
 ---
-layout: post-mobile
+layout: mobile-post
 title: "Vortrag Objektorientierung"
 date: 2016-02-10 00:00:00 +0000
 slug: vortrag-objektorientierung

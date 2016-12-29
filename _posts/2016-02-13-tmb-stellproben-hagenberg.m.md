@@ -1,5 +1,5 @@
 ---
-layout: post-mobile
+layout: mobile-post
 title: "TMB Stellproben Hagenberg"
 date: 2016-02-13 00:00:00 +0000
 categories: m uebungen

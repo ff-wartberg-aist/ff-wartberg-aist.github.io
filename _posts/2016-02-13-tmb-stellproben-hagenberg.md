@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: desktop-post
 title: "TMB Stellproben Hagenberg"
 date: 2016-02-13 00:00:00 +0000
-category: uebungen
+categories: uebungen
 ---
 Nachdem wir unsere TMB 23-12 (Teleskopmastbühne) bis jetzt ausgiebig bei uns in der Gemeinde getestet, intensiv geübt und auch einige Stellproben gemacht haben, war es jetzt an der Zeit auch in unserer Nachbargemeinde Hagenberg i. M. mit unserem TMB die Stellplätze für Einsätze auszukundschaften.
 
