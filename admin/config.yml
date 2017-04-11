@@ -1,0 +1,19 @@
+backend:
+  name: github
+  repo: ff-wartberg-aist/ff-wartberg-aist.github.io # Path to your Github repository
+  branch: master # Branch to update
+media_folder: "images/uploads" # Media files will be stored in the repo under images/uploads
+collections:
+  - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Post" # Used in the UI, ie.: "New Post"
+    folder: "_posts" # The path to the folder where the documents are stored
+    create: true # Allow users to create new documents in this collection
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template i.e. YYYY-MM-DD-title.md
+    fields: # The fields each document in this collection have
+      - {label: "Layout", name: "layout", widget: "hidden", default: "desktop-post"}
+      - {label: "Titel", name: "title", widget: "string"}
+      - {label: "Titelbild", name: "thumbnail", widget: "image"}
+      - {label: "Text", name: "body", widget: "markdown"}
+      # categories
+      # mobile
+      # gallery
